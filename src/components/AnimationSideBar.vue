@@ -2,12 +2,25 @@
   <div class="w-full lg:w-64 lg:h-full bg-gray-800 text-white flex flex-col min-h-0">
     <div class="flex-1 min-h-0 px-2 hidden lg:flex flex-col gap-2">
       <span class="pt-2">Skins</span>
-      <select
-        v-model="store.selectedSkin"
-        class="bg-gray-700 text-white"
-      >
-        <option v-for="skin in skins" :key="skin" :value="skin">{{ skin }}</option>
-      </select>
+      <div>
+        <template v-for="skin in skins" :key="skin">
+          <label
+            :for="skin"
+            class="block bg-gray-700 hover:bg-gray-500 text-white cursor-pointer p-1 has-checked:bg-gray-500"
+          >
+            <span> {{ skin }} </span>
+            <input
+              type="radio"
+              :id="skin"
+              name="skin"
+              :value="skin"
+              v-model="store.selectedSkin"
+              hidden
+            />
+          </label>
+        </template>
+      </div>
+
       <span>Animations</span>
       <div class="overflow-y-auto sidebar-scroll flex-1">
         <div
@@ -24,11 +37,50 @@
     <div class="lg:mt-auto flex flex-col">
       <div v-if="!currentChar?.customFiles" class="p-2">
         <span>Animation Category</span>
-        <select v-model="store.animationCategory" class="bg-gray-700 text-white w-full">
-          <option value="character">Character</option>
-          <option value="ultimate" :disabled="!currentChar?.cutscene">Ultimate</option>
-          <option value="dating" :disabled="!currentChar?.dating">Fated Guest</option>
-        </select>
+        <label
+          for="cate-character"
+          class="mt-1 block p-1 bg-gray-700 hover:bg-gray-500 text-white cursor-pointer has-checked:bg-gray-600 has-disabled:text-gray-500 has-disabled:bg-gray-700 has-disabled:hover:bg-gray-700 has-disabled:cursor-not-allowed"
+        >
+          <input
+            type="radio"
+            id="cate-character"
+            value="character"
+            v-model="store.animationCategory"
+            :disabled="!currentChar?.spine"
+            hidden
+          />
+          Character</label
+        >
+        <label
+          :disabled="!currentChar?.cutscene"
+          for="cate-ultimate"
+          class="block p-1 bg-gray-700 hover:bg-gray-500 text-white cursor-pointer has-checked:bg-gray-600 has-disabled:text-gray-500 has-disabled:bg-gray-700 has-disabled:hover:bg-gray-700 has-disabled:cursor-not-allowed"
+        >
+          <input
+            type="radio"
+            id="cate-ultimate"
+            value="ultimate"
+            v-model="store.animationCategory"
+            :disabled="!currentChar?.cutscene"
+            hidden
+          />
+          Ultimate</label
+        >
+        <label
+          :disabled="!currentChar?.dating"
+          for="cate-dating"
+          class="block p-1 bg-gray-700 hover:bg-gray-500 text-white cursor-pointer has-checked:bg-gray-600 has-disabled:text-gray-500 has-disabled:bg-gray-700 has-disabled:hover:bg-gray-700 has-disabled:cursor-not-allowed"
+        >
+          <input
+            type="radio"
+            id="cate-dating"
+            value="dating"
+            v-model="store.animationCategory"
+            :disabled="!currentChar?.dating"
+            hidden
+          />
+          Fated Guest</label
+        >
       </div>
       <div class="p-2">
         <span>Animation Speed</span>
@@ -65,12 +117,7 @@
         >
           BG Color
         </button>
-        <input
-          ref="colorInput"
-          type="color"
-          class="hidden"
-          @input="onColorChange"
-        />
+        <input ref="colorInput" type="color" class="hidden" @input="onColorChange" />
       </div>
       <div class="p-2 flex gap-2 items-center">
         <button
@@ -151,57 +198,72 @@
 </template>
 
 <script setup lang="ts">
-import { computed, toRefs, ref, watch, onMounted, onUnmounted } from 'vue'
-import { useCharacterStore } from '@/stores/characterStore'
+import { computed, toRefs, ref, watch, onMounted, onUnmounted } from "vue";
+import { useCharacterStore } from "@/stores/characterStore";
 
-import LoadingIcon from '@/components/icons/LoadingIcon.vue';
+import LoadingIcon from "@/components/icons/LoadingIcon.vue";
 
-const props = defineProps<{ animations: string[]; skins: string[]; exporting: boolean; screenshotting: boolean }>()
-const { animations, skins, exporting, screenshotting } = toRefs(props)
+const props = defineProps<{
+  animations: string[];
+  skins: string[];
+  exporting: boolean;
+  screenshotting: boolean;
+}>();
+const { animations, skins, exporting, screenshotting } = toRefs(props);
 
-const store = useCharacterStore()
-const colorInput = ref<HTMLInputElement | null>(null)
-const transparentBg = ref(false)
-const showExportMenu = ref(false)
-const desktopExportRef = ref<HTMLElement | null>(null)
-const mobileExportRef = ref<HTMLElement | null>(null)
+const store = useCharacterStore();
+const colorInput = ref<HTMLInputElement | null>(null);
+const transparentBg = ref(false);
+const showExportMenu = ref(false);
+const desktopExportRef = ref<HTMLElement | null>(null);
+const mobileExportRef = ref<HTMLElement | null>(null);
 
-const emit = defineEmits(['select', 'reset-camera', 'screenshot', 'export-animation', 'category-change'])
+const emit = defineEmits([
+  "select",
+  "reset-camera",
+  "screenshot",
+  "export-animation",
+  "category-change",
+]);
 
 function select(name: string) {
-  emit('select', name)
-  store.selectedAnimation = name
+  emit("select", name);
+  store.selectedAnimation = name;
 }
 
 function onColorChange(e: Event) {
-  const input = e.target as HTMLInputElement
-  store.backgroundColor = input.value
+  const input = e.target as HTMLInputElement;
+  store.backgroundColor = input.value;
 }
 
 function onScreenshot() {
-  emit('screenshot', transparentBg.value)
+  emit("screenshot", transparentBg.value);
 }
 
-function onExport(format: 'video' | 'frames') {
-  emit('export-animation', { format, transparent: transparentBg.value })
-  showExportMenu.value = false
+function onExport(format: "video" | "frames") {
+  emit("export-animation", { format, transparent: transparentBg.value });
+  showExportMenu.value = false;
 }
 
 function handleClickOutside(e: MouseEvent) {
-  const target = e.target as Node
-  if (desktopExportRef.value?.contains(target) || mobileExportRef.value?.contains(target))
-    return
-  showExportMenu.value = false
+  const target = e.target as Node;
+  if (desktopExportRef.value?.contains(target) || mobileExportRef.value?.contains(target)) return;
+  showExportMenu.value = false;
 }
 
-const selectedAnimation = computed(() => store.selectedAnimation)
-const toggleLabel = computed(() => (store.playing ? 'Pause' : 'Play'))
-const currentChar = computed(() => store.characters.find(c => c.id === store.selectedCharacterId))
+const selectedAnimation = computed(() => store.selectedAnimation);
+const toggleLabel = computed(() => (store.playing ? "Pause" : "Play"));
+const currentChar = computed(() =>
+  store.characters.find((c) => c.id === store.selectedCharacterId)
+);
 
-watch(() => store.animationCategory, () => {
-  emit('category-change');
-});
+watch(
+  () => store.animationCategory,
+  () => {
+    emit("category-change");
+  }
+);
 
-onMounted(() => document.addEventListener('click', handleClickOutside))
-onUnmounted(() => document.removeEventListener('click', handleClickOutside))
+onMounted(() => document.addEventListener("click", handleClickOutside));
+onUnmounted(() => document.removeEventListener("click", handleClickOutside));
 </script>

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "run-s build-main copy-spines",
+    "build-json-dev": "node scripts/makeSpineInfo.js src/assets/Brown-Dust-2-Asset/ public",
     "build-main": "run-p type-check \"build-only {@}\" --",
     "copy-spines": "node scripts/copy-spines.js",
     "preview": "vite preview",

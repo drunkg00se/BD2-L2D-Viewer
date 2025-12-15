@@ -1,5 +1,22 @@
 <template>
   <div class="w-full lg:w-80 h-full bg-gray-800 text-white flex flex-col min-h-0">
+    <div class="flex flex-row">
+      <button
+        @click="store.setSpineTypeCharacter"
+        class="flex-1 bg-gray-600 hover:bg-gray-500 text-white shadow transition px-4 py-2 cursor-pointer"
+        :class="{ 'bg-gray-500!': store.spineType === 'character' }"
+      >
+        Character
+      </button>
+      <button
+        @click="store.setSpineTypeAll"
+        class="flex-1 bg-gray-600 hover:bg-gray-500 text-white shadow transition px-4 py-2 cursor-pointer"
+        :class="{ 'bg-gray-500!': store.spineType === 'all' }"
+      >
+        All
+      </button>
+    </div>
+
     <input
       v-model="filter"
       type="text"
@@ -10,46 +27,45 @@
       <div
         v-for="char in filteredCharacters"
         :key="char.id"
-        class="flex items-center py-2 cursor-pointer"
+        class="flex items-center pt-1 cursor-pointer"
         :class="{ 'bg-gray-700': char.id === store.selectedCharacterId }"
         @click="select(char.id)"
       >
         <img
           :src="icons[char.id] || icons['unknown']"
           :alt="char.costumeName"
-          class="w-16 h-16 object-cover rounded-[50%]"
+          class="object-cover rounded-[50%] size-13"
         />
-        <span class="text-lg pl-2">{{ char.charName + ': ' + char.costumeName }}</span>
+        <span class="pl-2">{{ char.charName + ": " + char.costumeName }}</span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import icons from '@/utils/charIcons';
-import { ref, computed, onMounted } from 'vue'
-import { useCharacterStore } from '@/stores/characterStore'
+import { ref, computed, onMounted } from "vue";
+import { useCharacterStore } from "@/stores/characterStore";
 
-const emit = defineEmits(['select'])
-const store = useCharacterStore()
+const emit = defineEmits(["select"]);
+const store = useCharacterStore();
 
-const filter = ref('')
+const icons = store.spineInfo.avatar;
+
+const filter = ref("");
 
 const filteredCharacters = computed(() =>
   store.characters.filter((c) =>
-    (c.charName + ' ' + c.costumeName)
-      .toLowerCase()
-      .includes(filter.value.toLowerCase())
+    (c.charName + " " + c.costumeName).toLowerCase().includes(filter.value.toLowerCase())
   )
-)
+);
 
 function select(id: string) {
-  if (id === store.selectedCharacterId) return
-  emit('select', id)
-  store.selectedCharacterId = id
+  if (id === store.selectedCharacterId) return;
+  emit("select", id);
+  store.selectedCharacterId = id;
 }
 
 onMounted(() => {
-  emit('select', store.selectedCharacterId)
-})
+  emit("select", store.selectedCharacterId);
+});
 </script>

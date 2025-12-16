@@ -12,6 +12,7 @@
     "build-only": "vite build",
     "post-build": "node scripts/postBuild.js",
     "type-check": "vue-tsc --build",
+    "update:submodule": "node scripts/updateSubmodule.js",
     "lint": "eslint . --fix"
   },
   "dependencies": {

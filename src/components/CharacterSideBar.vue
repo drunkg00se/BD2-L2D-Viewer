@@ -32,7 +32,7 @@
         @click="select(char.id)"
       >
         <img
-          :src="icons[char.id] || icons['unknown']"
+          :src="getAvatar(char.id)"
           :alt="char.costumeName"
           class="object-cover rounded-[50%] size-13"
         />
@@ -48,8 +48,7 @@ import { useCharacterStore } from "@/stores/characterStore";
 
 const emit = defineEmits(["select"]);
 const store = useCharacterStore();
-
-const icons = store.spineInfo.avatar;
+const avatarMap = store.spineInfo.avatar;
 
 const filter = ref("");
 
@@ -63,6 +62,12 @@ function select(id: string) {
   if (id === store.selectedCharacterId) return;
   emit("select", id);
   store.selectedCharacterId = id;
+}
+
+function getAvatar(id: string) {
+  const matchId = /[0-9]{6}/.exec(id);
+  if (matchId) return avatarMap[matchId[0]] || avatarMap.unknown;
+  return avatarMap.unknown;
 }
 
 onMounted(() => {

@@ -27,11 +27,8 @@ function traverse(dir, result, missingAssets) {
       return;
     }
 
-    const matchId = /char([0-9]{6})$/.exec(name);
-    const id = matchId ? matchId[1] : name;
-
     result.push({
-      id,
+      id: name,
       charName: name,
       costumeName: "",
       spine: path.relative(process.cwd(), path.join(dir, atlasFile.name)).replace(/\\/g, "/"),

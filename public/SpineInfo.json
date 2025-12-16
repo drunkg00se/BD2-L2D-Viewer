@@ -613,10 +613,28 @@
       "dating": ""
     },
     {
+      "id": "004002",
+      "charName": "char004002",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char004002/char004002.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "004101",
       "charName": "char004101",
       "costumeName": "",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char004101/char004101.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "004102",
+      "charName": "char004102",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char004102/char004102.atlas",
       "cutscene": "",
       "datingHasNoBg": false,
       "dating": ""
@@ -883,6 +901,15 @@
       "dating": ""
     },
     {
+      "id": "061103",
+      "charName": "char061103",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char061103/char061103.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "061302",
       "charName": "char061302",
       "costumeName": "",
@@ -914,6 +941,15 @@
       "charName": "char061404",
       "costumeName": "",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char061404/char061404.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "061492",
+      "charName": "char061492",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char061492/char061492.atlas",
       "cutscene": "",
       "datingHasNoBg": false,
       "dating": ""
@@ -1220,6 +1256,15 @@
       "charName": "char067603",
       "costumeName": "",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char067603/char067603.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "067604",
+      "charName": "char067604",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char067604/char067604.atlas",
       "cutscene": "",
       "datingHasNoBg": false,
       "dating": ""
@@ -2431,6 +2476,15 @@
       "dating": ""
     },
     {
+      "id": "000201",
+      "charName": "cutscene_char000201",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char000201/cutscene_char000201.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "000202",
       "charName": "cutscene_char000202",
       "costumeName": "",
@@ -2944,6 +2998,15 @@
       "dating": ""
     },
     {
+      "id": "004002",
+      "charName": "cutscene_char004002",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char004002/cutscene_char004002.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "004101",
       "charName": "cutscene_char004101",
       "costumeName": "",
@@ -3061,6 +3124,15 @@
       "dating": ""
     },
     {
+      "id": "060401",
+      "charName": "cutscene_char060401",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char060401/cutscene_char060401.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "060402",
       "charName": "cutscene_char060402",
       "costumeName": "",
@@ -3110,6 +3182,15 @@
       "charName": "cutscene_char060602",
       "costumeName": "",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char060602/cutscene_char060602.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "060701",
+      "charName": "cutscene_char060701",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char060701/cutscene_char060701.atlas",
       "cutscene": "",
       "datingHasNoBg": false,
       "dating": ""
@@ -3187,6 +3268,15 @@
       "dating": ""
     },
     {
+      "id": "061103",
+      "charName": "cutscene_char061103",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char061103/cutscene_char061103.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "061302",
       "charName": "cutscene_char061302",
       "costumeName": "",
@@ -3227,6 +3317,15 @@
       "charName": "cutscene_char061404",
       "costumeName": "",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char061404/cutscene_char061404.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "061492",
+      "charName": "cutscene_char061492",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char061492/cutscene_char061492.atlas",
       "cutscene": "",
       "datingHasNoBg": false,
       "dating": ""
@@ -3493,6 +3592,15 @@
       "dating": ""
     },
     {
+      "id": "067604",
+      "charName": "cutscene_char067604",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char067604/cutscene_char067604.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "100501",
       "charName": "cutscene_char100501",
       "costumeName": "",
@@ -3578,6 +3686,24 @@
       "charName": "illust_dating10",
       "costumeName": "",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_dating/illust_dating10/illust_dating10.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "illust_dating11",
+      "charName": "illust_dating11",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_dating/illust_dating11/illust_dating11.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "illust_dating12",
+      "charName": "illust_dating12",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_dating/illust_dating12/illust_dating12.atlas",
       "cutscene": "",
       "datingHasNoBg": false,
       "dating": ""
@@ -3929,6 +4055,24 @@
       "charName": "illust_special9",
       "costumeName": "",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_special/illust_special9/illust_special9.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "specialillust116",
+      "charName": "specialillust116",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_special/specialillust116/specialillust116.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
+      "id": "specialillust117",
+      "charName": "specialillust117",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_special/specialillust117/specialillust117.atlas",
       "cutscene": "",
       "datingHasNoBg": false,
       "dating": ""
@@ -4375,6 +4519,15 @@
       "dating": ""
     },
     {
+      "id": "npc400050",
+      "charName": "npc400050",
+      "costumeName": "",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/npc/npc400050/npc400050.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": ""
+    },
+    {
       "id": "npc_ellin",
       "charName": "npc_ellin",
       "costumeName": "",
@@ -4654,6 +4807,15 @@
       "cutscene": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char000708/cutscene_char000708.atlas",
       "datingHasNoBg": true,
       "dating": ""
+    },
+    {
+      "id": "0007_illust_dating11",
+      "charName": "Eclipse",
+      "costumeName": "Eclipse_illust_dating11",
+      "spine": "",
+      "cutscene": "",
+      "datingHasNoBg": true,
+      "dating": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_dating/illust_dating11/illust_dating11.atlas"
     },
     {
       "id": "000801",
@@ -4983,7 +5145,7 @@
       "id": "003603",
       "charName": "Olivier",
       "costumeName": "Fallen Wings",
-      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char003603/char003603.atlas",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char00603/char00603.atlas",
       "cutscene": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char003603/cutscene_char003603.atlas",
       "datingHasNoBg": true,
       "dating": ""
@@ -5048,6 +5210,15 @@
       "costumeName": "Prophetic Dream",
       "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char004001/char004001.atlas",
       "cutscene": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char004001/cutscene_char004001.atlas",
+      "datingHasNoBg": true,
+      "dating": ""
+    },
+    {
+      "id": "004002",
+      "charName": "Darian",
+      "costumeName": "Bittersweet Bunny",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char004002/char004002.atlas",
+      "cutscene": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char004002/cutscene_char004002.atlas",
       "datingHasNoBg": true,
       "dating": ""
     },
@@ -5331,6 +5502,15 @@
       "dating": ""
     },
     {
+      "id": "061103",
+      "charName": "Eleaneer",
+      "costumeName": "Shadown Bunny",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char061103/char061103.atlas",
+      "cutscene": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char061103/cutscene_char061103.atlas",
+      "datingHasNoBg": true,
+      "dating": ""
+    },
+    {
       "id": "061302",
       "charName": "Dalvi",
       "costumeName": "Bright Moon",
@@ -5365,6 +5545,15 @@
       "cutscene": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char061404/cutscene_char061404.atlas",
       "datingHasNoBg": true,
       "dating": ""
+    },
+    {
+      "id": "061492",
+      "charName": "Zenith",
+      "costumeName": "Stranger Bunny",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/char061492/char061492.atlas",
+      "cutscene": "",
+      "datingHasNoBg": false,
+      "dating": "src/assets/Brown-Dust-2-Asset/spine/illust/illust_dating/illust_dating12/illust_dating12.atlas"
     },
     {
       "id": "062001",
@@ -5682,6 +5871,15 @@
       "dating": ""
     },
     {
+      "id": "067604",
+      "charName": "Wilhelmina",
+      "costumeName": "char067604",
+      "spine": "src/assets/Brown-Dust-2-Asset/spine/char/cutscene_char067604/cutscene_char067604.atlas",
+      "cutscene": "src/assets/Brown-Dust-2-Asset/spine/cutscenes/cutscene_char067604/cutscene_char067604.atlas",
+      "datingHasNoBg": true,
+      "dating": ""
+    },
+    {
       "id": "0676_illust_dating6",
       "charName": "Wilhelmina",
       "costumeName": "Wilhelmina_illust_dating6",
@@ -5959,6 +6157,13 @@
     "103601": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char103601_20.png",
     "103701": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char103701_21.png",
     "250004": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char250004_34.png",
+    "500101": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char500101_1.png",
+    "500201": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char500201_2.png",
+    "500301": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char500301_3.png",
+    "500401": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char500401_4.png",
+    "500501": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char500501_5.png",
+    "500601": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char500601_6.png",
+    "500701": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char500701_7.png",
     "600101": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char600101_1.png",
     "600201": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char600201_2.png",
     "600301": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char600301_3.png",
@@ -6726,6 +6931,14 @@
     "925306": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925306_8.png",
     "925307": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925307_1.png",
     "925308": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925308_9.png",
+    "925400": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925400_3.png",
+    "925401": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925401_5.png",
+    "925402": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925402_4.png",
+    "925403": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925403_1.png",
+    "925404": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925404_7.png",
+    "925405": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925405_2.png",
+    "925406": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925406_6.png",
+    "925407": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char925407_8.png",
     "970000": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char970000_0.png",
     "970001": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char970001_1.png",
     "970002": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char970002_2.png",
@@ -6896,6 +7109,20 @@
     "972713": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char972713_11.png",
     "972714": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char972714_12.png",
     "972715": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char972715_13.png",
+    "973302": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973302_0.png",
+    "973303": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973303_1.png",
+    "973304": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973304_2.png",
+    "973305": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973305_3.png",
+    "973306": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973306_4.png",
+    "973307": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973307_5.png",
+    "973308": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973308_6.png",
+    "973309": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973309_7.png",
+    "973310": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973310_8.png",
+    "973311": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973311_9.png",
+    "973312": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973312_10.png",
+    "973313": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973313_11.png",
+    "973314": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973314_12.png",
+    "973315": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char973315_13.png",
     "989001": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char989001_0.png",
     "1000001": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char1000001_1.png",
     "1000101": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char1000101_2.png",
@@ -6982,7 +7209,9 @@
     "003901": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char003901_183.png",
     "003902": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char003902_187.png",
     "004001": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char004001_184.png",
+    "004002": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char004002_188.png",
     "004101": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char004101_185.png",
+    "004102": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char004102_189.png",
     "020001": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char020001_127.png",
     "020002": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char020002_130.png",
     "020101": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char020101_128.png",
@@ -7015,10 +7244,12 @@
     "061002": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061002_42.png",
     "061101": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061101_82.png",
     "061102": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061102_43.png",
+    "061103": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061103_190.png",
     "061302": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061302_107.png",
     "061305": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061305_131.png",
     "061402": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061402_104.png",
     "061404": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061404_175.png",
+    "061492": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char061492_191.png",
     "062001": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char062001_54.png",
     "062002": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char062002_33.png",
     "063001": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char063001_60.png",
@@ -7053,6 +7284,7 @@
     "067503": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char067503_158.png",
     "067601": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char067601_170.png",
     "067603": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char067603_174.png",
+    "067604": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_char067604_192.png",
     "unknown": "src/assets/Brown-Dust-2-Asset/ui/icon/icon_char/icon_charinfo.png"
   }
 }
